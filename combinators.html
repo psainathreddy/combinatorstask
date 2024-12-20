@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./combinators.css">
+</head>
+
+<body>
+    <section class="content">
+        <p>Some text <span>inside paragraph</span></p>
+        <div class="nested">
+            <span>Span inside nested div</span>
+        </div>
+        <span>Span outside nested div</span>
+    </section>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+        <div>
+            <ul>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </nav>
+
+    <title>CSS Descendant Combinator</title>
+
+    <div class="container">
+        <p>This is a paragraph inside a div.</p>
+        <span>This is a span inside the same div.</span>
+    </div>
+    <p>This is a standalone paragraph.</p>
+    <div class="parent">
+        <p>Child paragraph</p>
+        <div>
+            <p>Nested paragraph</p>
+        </div>
+        <h1>Heading 1</h1>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <div class="box">Box 1</div>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <section>
+            <div class="container">
+                <h2>Title</h2>
+                <p>Content paragraph</p>
+            </div>
+            <div>
+                <p>Another paragraph</p>
+            </div>
+        </section>
+        <div class="outer">
+            <div class="inner">
+                <p>First Paragraph</p>
+            </div>
+            <div>
+                <p>Second Paragraph</p>
+            </div>
+        </div>
+        <div class="group">
+            <h2>Section Title</h2>
+            <p>First Paragraph</p>
+            <p>Second Paragraph</p>
+            <div>
+                <p>Third Paragraph</p>
+            </div>
+        </div>
+        <section class="content">
+            <div>
+                <div>
+                    <p>Nested Paragraph</p>
+                </div>
+            </div>
+            <p>Standalone Paragraph</p>
+        </section>
+        <div class="wrapper">
+            <h1>Main Title</h1>
+            <p>Intro Paragraph</p>
+            <div class="content">
+                <p>Content Paragraph</p>
+            </div>
+            <p>Outro Paragraph</p>
+        </div>
+        <div class="main">
+            <h1>Main Title</h1>
+            <p class="intro">This is an introduction paragraph.</p>
+            <div class="content">
+                <p>Content Paragraph 1</p>
+                <p>Content Paragraph 2</p>
+                <div>
+                    <span>Nested Span 1</span>
+                    <span>Nested Span 2</span>
+                </div>
+            </div>
+            <p>Standalone Paragraph</p>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <p>Sidebar Paragraph</p>
+        </div>
+        <!-- Question 1 :select all <p> elements inside a <div> with the class contaner -->
+        <h4>Paragraphs</h4>
+        <div class="firstcontainer">
+            <p class="p">paragraph 1</p>
+            <p>paragraph 2</p>
+        </div>
+        <fieldset>
+            <legend>
+                Input tags
+            </legend>
+            Name:<input type="text" id="user-info">
+            <br>
+            Email:<input type="email">
+        </fieldset>
+        <!-- Queston 3 : select all <li> elements that are children of a <ul> with the class "menu" and have the class "active"  -->
+        <h4>List</h4>
+        <ul class="menu" type="circle">
+            <li class="active">item 1</li>
+            <li>item 2</li>
+        </ul>
+        <!--Question 4 :Select all <a> tags within a <nav> element that also have the "external"  class -->
+        <h4>Links</h4>
+        <nav>
+            <a href="#" class="external">External Link</a>
+            <br>
+            <a href="#">Internal Link</a>
+        </nav>
+</body>
+
+</html>

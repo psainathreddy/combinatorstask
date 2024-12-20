@@ -1,0 +1,64 @@
+.content span:not(.nested span) {
+    background-color: aquamarine;
+}
+
+nav>ul {
+    background-color: antiquewhite;
+}
+
+.container p:not(span) {
+    background-color: blue;
+}
+
+.parent>p {
+    background-color: brown;
+}
+
+h1+p {
+    background-color: cadetblue;
+}
+
+.box~ {
+    background-color: coral;
+}
+
+.container h2+p {
+    background-color: aqua;
+}
+
+.outer .inner>p {
+    color: chocolate;
+}
+
+.group h2+p {
+    color: bisque;
+}
+
+.content div p {
+    color: aqua;
+}
+
+.wrapper>p {
+    color: blue;
+}
+
+.main p:not(intro) {
+    color: aqua;
+}
+
+.firstcontainer>p+p {
+    color: lightpink;
+}
+
+fieldset #user-info {
+    color: brown;
+}
+
+.menu>.active {
+    color: green;
+    background-color: aqua;
+}
+
+nav .external {
+    color: greenyellow;
+}
